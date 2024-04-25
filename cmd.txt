@@ -1,0 +1,7 @@
+//cmds to run in broker - docker:
+
+kafka-topics --list --bootstrap-server broker:29092
+
+kafka-console-consumer --topic voters_topic --bootstrap-server broker:29092
+
+kafka-topics --delete --topic <topic name> --bootstrap-server broker:29092
